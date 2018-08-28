@@ -10,7 +10,24 @@ namespace Prime.Services
             {
                 return false;
             }
-            throw new NotImplementedException("Please create a test first");
+
+            int k;
+            k = 0;
+            for (int i = 1; i <= candidate; i++)
+            {
+                if (candidate % i == 0)
+                {
+                    k++;
+                }
+            }
+            if (k == 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
