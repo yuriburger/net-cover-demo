@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <!-- Code Coverage Analysis requires Full Debug-->
     <DebugType>Full</DebugType>
+    <!-- SonarQube requires a valid Project GUID but Core projects dont use this -->
+    <ProjectGuid>{950585D2-E827-4D75-ADD6-C1C629CBC37C}</ProjectGuid>
   </PropertyGroup>
-
 </Project>
