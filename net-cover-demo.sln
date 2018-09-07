@@ -7,6 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeService", "PrimeServic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeService.Tests", "PrimeService.Tests\PrimeService.Tests.csproj", "{4C5BA2D7-EE64-4147-8A1C-C04CEEB5DA8E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{BD6FCA31-4839-4A45-9818-A96166344B57}"
+	ProjectSection(SolutionItems) = preProject
+		AnalyzeCoverageFile.ps1 = AnalyzeCoverageFile.ps1
+		CopyTestResults.ps1 = CopyTestResults.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
