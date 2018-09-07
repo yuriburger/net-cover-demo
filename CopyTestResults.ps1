@@ -1,0 +1,2 @@
+Get-ChildItem -Path $(Agent.TempDirectory) -Filter *.trx -Recurse -ErrorAction SilentlyContinue -Force | %{Join-Path -Path $_.Directory -ChildPath $_.Name } | Copy-Item -Destination $(Agent.BuildDirectory)\TestResults\TestResults.trx -Force
+Get-ChildItem -Path $(Agent.TempDirectory) -Filter *.coverage -Recurse -ErrorAction SilentlyContinue -Force | %{Join-Path -Path $_.Directory -ChildPath $_.Name } | Copy-Item -Destination  $(Agent.BuildDirectory)\TestResults\TestCoverage.coverage -Force
